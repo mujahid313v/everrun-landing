@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverRun - Website Deployment Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background -->
+    <div id="canvas-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">EverRun</div>
+        <ul class="nav-links">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#tech-stack">Tech</a></li>
+            <li><a href="#existing">Existing</a></li>
+            <li><a href="#need">Need</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#structure">Structure</a></li>
+            <li><a href="#agile">Agile</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- SLIDE 1: Title Slide -->
+    <section class="section hero" id="home">
+        <div class="hero-content">
+            <div class="title-slide">
+                <h1>EverRun</h1>
+                <h2>Website Deployment Platform</h2>
+                <div class="hero-subtitle">Deploy Your Sites Instantly</div>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-card card-1">
+                <div class="card-icon">📦</div>
+                <div class="card-text">ZIP Deploy</div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">🐙</div>
+                <div class="card-text">GitHub</div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">🐳</div>
+                <div class="card-text">Docker</div>
+            </div>
+            <div class="floating-card card-4">
+                <div class="card-icon">⚡</div>
+                <div class="card-text">Fast</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: Table of Contents -->
+    <section class="section toc" id="toc">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Contents</span>
+                <h2 class="section-title">What We'll Cover</h2>
+            </div>
+            <div class="toc-grid reveal">
+                <div class="toc-item">1. Introduction</div>
+                <div class="toc-item">2. Technology Stack</div>
+                <div class="toc-item">3. Existing System</div>
+                <div class="toc-item">4. Need for New System</div>
+                <div class="toc-item">5. Objectives</div>
+                <div class="toc-item">6. Problem Definition</div>
+                <div class="toc-item">7. Targeted Users</div>
+                <div class="toc-item">8. System Design</div>
+                <div class="toc-item">9. Screenshots</div>
+                <div class="toc-item">10. Data Dictionary</div>
+                <div class="toc-item">11. Coding Standards</div>
+                <div class="toc-item">12. Agile Methodology</div>
+                <div class="toc-item">13. Timeline</div>
+                <div class="toc-item">14. Conclusion</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: Developed By -->
+    <section class="section developed-by" id="developed">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Project Info</span>
+                <h2 class="section-title">Developed By</h2>
+            </div>
+            <div class="developed-content reveal">
+                <div class="project-info">
+                    <h3>Project Name: <span>EverRun</span></h3>
+                    <h3>Type: <span>Website Deployment Platform (SaaS)</span></h3>
+                    <p>A Django-based platform for deploying static and dynamic websites</p>
+                    <div class="features-list">
+                        <span>🐙 GitHub OAuth</span>
+                        <span>🐳 Docker Containerization</span>
+                        <span>🔧 Multi-Framework Support</span>
+                    </div>
+                    <div class="project-links">
+                        <span>📂 GitHub: <a href="#">[Your GitHub URL]</a></span>
+                        <span>🌐 Live Demo: <a href="#">http://164.52.210.224/</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: Introduction -->
+    <section class="section introduction" id="intro">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Introduction</span>
+                <h2 class="section-title">What is EverRun?</h2>
+            </div>
+            <div class="intro-content reveal">
+                <p class="intro-main">EverRun is a cloud-based website deployment platform designed for developers and businesses - similar to Vercel, Netlify, and Render.</p>
+                <div class="intro-points">
+                    <div class="intro-point">✓ Deploy static sites from ZIP files</div>
+                    <div class="intro-point">✓ Deploy from GitHub repositories</div>
+                    <div class="intro-point">✓ Smart framework detection (Node.js, Django, Laravel)</div>
+                    <div class="intro-point">✓ Docker containerization</div>
+                    <div class="intro-point">✓ Real-time deployment logs</div>
+                    <div class="intro-point">✓ GitHub OAuth authentication</div>
+                    <div class="intro-point">✓ Stripe payment ready</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 5: Technology Stack -->
+    <section class="section tech-stack" id="tech-stack">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Technology Stack</span>
+                <h2 class="section-title">Built With Modern Tech</h2>
+            </div>
+            <div class="tech-sections reveal">
+                <div class="tech-section">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        <span>Bootstrap 5</span><span>Django Templates</span>
+                    </div>
+                </div>
+                <div class="tech-section">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <span>Python 3.10+</span><span>Django 4.2</span>
+                        <span>django-allauth</span>
+                    </div>
+                </div>
+                <div class="tech-section">
+                    <h3>Database</h3>
+                    <div class="tech-items">
+                        <span>SQLite (Dev)</span><span>PostgreSQL (Production)</span>
+                    </div>
+                </div>
+                <div class="tech-section">
+                    <h3>Deployment & Infrastructure</h3>
+                    <div class="tech-items">
+                        <span>Docker</span><span>Buildpacks</span><span>Nixpacks</span>
+                        <span>GitHub API</span><span>Linux Server</span>
+                    </div>
+                </div>
+                <div class="tech-section">
+                    <h3>Additional</h3>
+                    <div class="tech-items">
+                        <span>Stripe (Ready)</span><span>Gunicorn</span><span>WhiteNoise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 6: Existing System -->
+    <section class="section existing" id="existing">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Existing System</span>
+                <h2 class="section-title">Current Challenges</h2>
+            </div>
+            <div class="challenges-grid reveal">
+                <div class="challenge-card">
+                    <div class="challenge-icon">⏱️</div>
+                    <h3>Time Consuming</h3>
+                    <p>Manual FTP/SFTP deployment processes</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">🔧</div>
+                    <h3>No GitHub Integration</h3>
+                    <p>No automated deployment from repos</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">📦</div>
+                    <h3>Limited Support</h3>
+                    <p>Mostly static only, no frameworks</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">🐳</div>
+                    <h3>No Containerization</h3>
+                    <p>Deployment inconsistencies</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">📊</div>
+                    <h3>No Real-time Logs</h3>
+                    <p>No status tracking</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">🐍</div>
+                    <h3>No Backend Support</h3>
+                    <p>Can't deploy Python/PHP/Node.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 7: Need for New System -->
+    <section class="section need" id="need">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Need for New System</span>
+                <h2 class="section-title">Why EverRun?</h2>
+            </div>
+            <div class="need-content reveal">
+                <div class="need-block">
+                    <h3>Unified Platform</h3>
+                    <ul>
+                        <li>All-in-one deployment - ZIP OR GitHub</li>
+                        <li>Single dashboard for all sites</li>
+                        <li>No need for multiple tools</li>
+                    </ul>
+                </div>
+                <div class="need-block">
+                    <h3>Key Benefits</h3>
+                    <ul>
+                        <li>Faster deployments - minutes, not hours</li>
+                        <li>GitHub integration for continuous deployment</li>
+                        <li>Real-time tracking with live logs</li>
+                        <li>Docker containerization</li>
+                        <li>Multi-framework support</li>
+                        <li>Automatic framework detection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: Objectives -->
+    <section class="section objectives" id="objectives">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Objectives</span>
+                <h2 class="section-title">Project Objectives</h2>
+            </div>
+            <div class="objectives-grid reveal">
+                <div class="objective-card">
+                    <span class="obj-num">01</span>
+                    <h3>One-Click Deployment</h3>
+                    <p>Fast static site deployment from ZIP files</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">02</span>
+                    <h3>GitHub Integration</h3>
+                    <p>Automated deployments from GitHub repos</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">03</span>
+                    <h3>Multi-Framework Support</h3>
+                    <p>Node.js, Django, Laravel applications</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">04</span>
+                    <h3>Real-time Tracking</h3>
+                    <p>Deployment logs and status in real-time</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">05</span>
+                    <h3>Containerization</h3>
+                    <p>Dockerize for scalability & consistency</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">06</span>
+                    <h3>User Authentication</h3>
+                    <p>Secure GitHub OAuth authentication</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">07</span>
+                    <h3>Scalability</h3>
+                    <p>Handle growing user base</p>
+                </div>
+                <div class="objective-card">
+                    <span class="obj-num">08</span>
+                    <h3>Payment Readiness</h3>
+                    <p>Foundation for Stripe integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 9: Problem Definition -->
+    <section class="section problem" id="problem">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Problem Definition</span>
+                <h2 class="section-title">The Problem</h2>
+            </div>
+            <div class="problem-content reveal">
+                <div class="problem-section">
+                    <h3>Manual Deployment Issues</h3>
+                    <ul>
+                        <li>Too much manual input required</li>
+                        <li>FTP/SFTP uploads are slow and error-prone</li>
+                        <li>Server configuration needs technical expertise</li>
+                    </ul>
+                </div>
+                <div class="problem-section">
+                    <h3>Inefficiency</h3>
+                    <ul>
+                        <li>Delays affect productivity</li>
+                        <li>No real-time status updates</li>
+                        <li>Lack of automation slows workflow</li>
+                    </ul>
+                </div>
+                <div class="problem-section">
+                    <h3>Limited Capabilities</h3>
+                    <ul>
+                        <li>Can't deploy modern web applications</li>
+                        <li>No backend framework support</li>
+                        <li>No containerization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 10: Targeted Users -->
+    <section class="section users" id="users">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Targeted Users</span>
+                <h2 class="section-title">Who Can Use EverRun?</h2>
+            </div>
+            <div class="users-grid reveal">
+                <div class="user-card">
+                    <div class="user-icon">👨‍💻</div>
+                    <h3>Web Developers</h3>
+                    <p>Freelancers & agencies needing quick deployment</p>
+                </div>
+                <div class="user-card">
+                    <div class="user-icon">🏢</div>
+                    <h3>Startups & Small Businesses</h3>
+                    <p>Quick web presence without DevOps</p>
+                </div>
+                <div class="user-card">
+                    <div class="user-icon">🎓</div>
+                    <h3>Students & Learners</h3>
+                    <p>Portfolio deployment for learning</p>
+                </div>
+                <div class="user-card">
+                    <div class="user-icon">⚙️</div>
+                    <h3>DevOps Engineers</h3>
+                    <p>Quick prototyping & testing</p>
+                </div>
+                <div class="user-card">
+                    <div class="user-icon">🏢</div>
+                    <h3>Agencies</h3>
+                    <p>Manage multiple client sites</p>
+                </div>
+                <div class="user-card">
+                    <div class="user-icon">☁️</div>
+                    <h3>Cloud Businesses</h3>
+                    <p>SaaS application deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 11-13: System Design WITH DIAGRAMS -->
+    <section class="section design" id="design">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">System Design</span>
+                <h2 class="section-title">Architecture & Components</h2>
+            </div>
+            
+            <!-- Clickable Diagrams -->
+            <div class="diagrams-section reveal">
+                <h3 class="diagrams-title">📊 Click on any diagram to view full size</h3>
+                
+                <!-- Use Case Diagram (1) -->
+                <div class="diagram-category">
+                    <h4>Use Case Diagram</h4>
+                    <div class="diagram-grid">
+                        <div class="diagram-card" onclick="openDiagram('diagrams/usecase.png')">
+                            <div class="diagram-preview">📋</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Use Case Diagram</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Class Diagram (1) -->
+                <div class="diagram-category">
+                    <h4>Class Diagram</h4>
+                    <div class="diagram-grid">
+                        <div class="diagram-card" onclick="openDiagram('diagrams/class-diagram.png')">
+                            <div class="diagram-preview">🏗️</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Class Diagram</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity Diagrams (3) -->
+                <div class="diagram-category">
+                    <h4>Activity Diagrams (3)</h4>
+                    <div class="diagram-grid">
+                        <div class="diagram-card" onclick="openDiagram('diagrams/activity-1.png')">
+                            <div class="diagram-preview">🔄</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Activity Diagram 1</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                        <div class="diagram-card" onclick="openDiagram('diagrams/activity-2.png')">
+                            <div class="diagram-preview">🔄</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Activity Diagram 2</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                        <div class="diagram-card" onclick="openDiagram('diagrams/activity-3.png')">
+                            <div class="diagram-preview">🔄</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Activity Diagram 3</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sequence Diagrams (3) -->
+                <div class="diagram-category">
+                    <h4>Sequence Diagrams (3)</h4>
+                    <div class="diagram-grid">
+                        <div class="diagram-card" onclick="openDiagram('diagrams/sequence-1.png')">
+                            <div class="diagram-preview">📨</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Sequence Diagram 1</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                        <div class="diagram-card" onclick="openDiagram('diagrams/sequence-2.png')">
+                            <div class="diagram-preview">📨</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Sequence Diagram 2</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                        <div class="diagram-card" onclick="openDiagram('diagrams/sequence-3.png')">
+                            <div class="diagram-preview">📨</div>
+                            <div class="diagram-info">
+                                <span class="diagram-name">Sequence Diagram 3</span>
+                                <span class="diagram-hint">Click to enlarge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Components - Visual Flow -->
+            <div class="core-components reveal">
+                <h3 class="components-title">🔧 Core Components - System Architecture</h3>
+                
+                <!-- User Layer -->
+                <div class="layer user-layer">
+                    <h4>👤 User Interface Layer</h4>
+                    <div class="component-row">
+                        <div class="component-box">
+                            <span class="box-icon">📊</span>
+                            <span class="box-title">Dashboard</span>
+                        </div>
+                        <div class="component-box">
+                            <span class="box-icon">📁</span>
+                            <span class="box-title">Upload ZIP</span>
+                        </div>
+                        <div class="component-box">
+                            <span class="box-icon">🐙</span>
+                            <span class="box-title">GitHub Browser</span>
+                        </div>
+                        <div class="component-box">
+                            <span class="box-icon">📋</span>
+                            <span class="box-title">Real-time Logs</span>
+                        </div>
+                        <div class="component-box">
+                            <span class="box-icon">⚡</span>
+                            <span class="box-title">Deployment Status</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">⬇️</div>
+
+                <!-- Backend Layer -->
+                <div class="layer backend-layer">
+                    <h4>⚙️ Backend Processing Layer</h4>
+                    <div class="component-row">
+                        <div class="component-box highlight">
+                            <span class="box-icon">🔐</span>
+                            <span class="box-title">Authentication</span>
+                            <span class="box-desc">GitHub OAuth</span>
+                        </div>
+                        <div class="component-box highlight">
+                            <span class="box-icon">🗄️</span>
+                            <span class="box-title">Site Management</span>
+                            <span class="box-desc">CRUD Operations</span>
+                        </div>
+                        <div class="component-box highlight">
+                            <span class="box-icon">🚀</span>
+                            <span class="box-title">Deployment Engine</span>
+                            <span class="box-desc">ZIP & GitHub</span>
+                        </div>
+                        <div class="component-box highlight">
+                            <span class="box-icon">🤖</span>
+                            <span class="box-title">Smart Deployer</span>
+                            <span class="box-desc">Auto Detection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">⬇️</div>
+
+                <!-- Infrastructure Layer -->
+                <div class="layer infra-layer">
+                    <h4>🐳 Infrastructure Layer</h4>
+                    <div class="component-row">
+                        <div class="component-box infra">
+                            <span class="box-icon">📦</span>
+                            <span class="box-title">Buildpacks</span>
+                            <span class="box-desc">Node/Django</span>
+                        </div>
+                        <div class="component-box infra">
+                            <span class="box-icon">⚡</span>
+                            <span class="box-title">Nixpacks</span>
+                            <span class="box-desc">PHP/Laravel</span>
+                        </div>
+                        <div class="component-box infra">
+                            <span class="box-icon">🐋</span>
+                            <span class="box-title">Docker</span>
+                            <span class="box-desc">Containerization</span>
+                        </div>
+                        <div class="component-box infra">
+                            <span class="box-icon">🌐</span>
+                            <span class="box-title">Linux Server</span>
+                            <span class="box-desc">Production</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">⬇️</div>
+
+                <!-- Database Layer -->
+                <div class="layer db-layer">
+                    <h4>🗃️ Database Layer</h4>
+                    <div class="component-row center">
+                        <div class="component-box db">
+                            <span class="box-icon">👤</span>
+                            <span class="box-title">User</span>
+                        </div>
+                        <div class="component-box db">
+                            <span class="box-icon">🌐</span>
+                            <span class="box-title">Site</span>
+                        </div>
+                        <div class="component-box db">
+                            <span class="box-icon">🐙</span>
+                            <span class="box-title">SocialAccount</span>
+                        </div>
+                        <div class="component-box db">
+                            <span class="box-icon">🔑</span>
+                            <span class="box-title">SocialToken</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="design-section reveal">
+                <h3>Database Models</h3>
+                <div class="db-table">
+                    <table>
+                        <thead><tr><th>Model</th><th>Fields</th></tr></thead>
+                        <tbody>
+                            <tr><td>User</td><td>id, username, email, password</td></tr>
+                            <tr><td>Site</td><td>id, user, name, slug, status, zip_file, created_at</td></tr>
+                            <tr><td>SocialAccount</td><td>id, user, provider, uid</td></tr>
+                            <tr><td>SocialToken</td><td>id, account, token, token_secret</td></tr>
+                            <tr><td>Plan (Future)</td><td>id, name, price, features</td></tr>
+                            <tr><td>Subscription (Future)</td><td>id, user, plan, stripe_id</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen Diagram Modal -->
+    <div id="diagramModal" class="modal">
+        <span class="close-modal" onclick="closeDiagram()">&times;</span>
+        <div class="modal-content">
+            <img id="diagramImage" src="" alt="Diagram">
+        </div>
+        <div class="modal-nav">
+            <button class="nav-btn" onclick="changeDiagram(-1)">❮ Previous</button>
+            <span id="diagramCounter">1 / 8</span>
+            <button class="nav-btn" onclick="changeDiagram(1)">Next ❯</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 17: Screenshots -->
+    <section class="section screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Screenshots</span>
+                <h2 class="section-title">Application Interface</h2>
+            </div>
+            <div class="screenshots-grid reveal">
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">📊</div>
+                    <h3>Dashboard</h3>
+                    <p>List of deployed sites</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">📁</div>
+                    <h3>Upload ZIP</h3>
+                    <p>File upload interface</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">🔐</div>
+                    <h3>GitHub Login</h3>
+                    <p>OAuth authentication</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">🐙</div>
+                    <h3>Repository List</h3>
+                    <p>Select repo to deploy</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">⚡</div>
+                    <h3>Deployment Status</h3>
+                    <p>Live status with logs</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">📋</div>
+                    <h3>Real-time Logs</h3>
+                    <p>Streaming logs display</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 18: Data Dictionary -->
+    <section class="section data" id="data">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Data Dictionary</span>
+                <h2 class="section-title">Database Tables</h2>
+            </div>
+            <div class="data-table reveal">
+                <table>
+                    <thead>
+                        <tr><th>No</th><th>Table Name</th><th>Description</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>User</td><td>Django built-in user model</td></tr>
+                        <tr><td>2</td><td>Site</td><td>Deployment sites with name, slug, status</td></tr>
+                        <tr><td>3</td><td>SocialAccount</td><td>GitHub OAuth account linking</td></tr>
+                        <tr><td>4</td><td>SocialToken</td><td>GitHub API tokens</td></tr>
+                        <tr><td>5</td><td>Plan</td><td>Subscription plans (Future)</td></tr>
+                        <tr><td>6</td><td>Subscription</td><td>User subscriptions (Future)</td></tr>
+                        <tr><td>7</td><td>UsageRecord</td><td>Monthly usage metrics (Future)</td></tr>
+                        <tr><td>8</td><td>Payment</td><td>Payment history (Future)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 19-20: Coding Standards -->
+    <section class="section structure" id="structure">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Coding Standards</span>
+                <h2 class="section-title">Project Structure</h2>
+            </div>
+            <div class="structure-content reveal">
+                <pre class="code-block">
+everrun/                         # Root Project Directory
+├── backend/                      # Django Project
+│   ├── config/                   # Project Settings
+│   │   ├── settings.py           # Django settings
+│   │   ├── urls.py               # URL routing
+│   │   ├── wsgi.py               # WSGI entry
+│   │   └── asgi.py               # ASGI entry
+│   ├── deployments/              # Main Deployment App
+│   │   ├── models.py             # Site model
+│   │   ├── views.py              # All views
+│   │   ├── urls.py               # URL routing
+│   │   ├── forms.py              # Upload forms
+│   │   ├── deployer.py           # SmartDeployer class
+│   │   ├── adapters.py           # AllAuth adapter
+│   │   └── admin.py              # Django admin
+│   ├── templates/                 # HTML templates
+│   └── manage.py                 # Django management
+├── sites-data/                   # Deployed sites data
+├── releases/                     # Release versions
+├── scripts/                      # Deployment scripts
+├── requirements.txt              # Python dependencies
+└── readme.md                    # Documentation
+                </pre>
+            </div>
+            <div class="coding-practices reveal">
+                <h3>Coding Best Practices</h3>
+                <ul>
+                    <li>Follow PEP 8 Python style guide</li>
+                    <li>Use meaningful variable and function names</li>
+                    <li>Use template inheritance</li>
+                     logic minimal in views</li>
+                    <li>Use decorators for authentication</li>
+                    <li>Keep business<li>Never commit secrets to version control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 21: Agile Methodology -->
+    <section class="section agile" id="agile">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Agile Methodology</span>
+                <h2 class="section-title">Development Sprints</h2>
+            </div>
+            <div class="sprints-grid reveal">
+                <div class="sprint-card">
+                    <span class="sprint-num">Sprint 1</span>
+                    <h3>Week 1-2</h3>
+                    <p>Project Setup & Authentication</p>
+                </div>
+                <div class="sprint-card">
+                    <span class="sprint-num">Sprint 2</span>
+                    <h3>Week 3-4</h3>
+                    <p>Static Deployment (ZIP Upload)</p>
+                </div>
+                <div class="sprint-card">
+                    <span class="sprint-num">Sprint 3</span>
+                    <h3>Week 5-6</h3>
+                    <p>GitHub Integration</p>
+                </div>
+                <div class="sprint-card">
+                    <span class="sprint-num">Sprint 4</span>
+                    <h3>Week 7-8</h3>
+                    <p>Dynamic Deployment (Buildpacks)</p>
+                </div>
+                <div class="sprint-card">
+                    <span class="sprint-num">Sprint 5</span>
+                    <h3>Week 9-10</h3>
+                    <p>Real-time Features</p>
+                </div>
+                <div class="sprint-card">
+                    <span class="sprint-num">Sprint 6</span>
+                    <h3>Week 11-12</h3>
+                    <p>Payment Integration (Future)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 22: Timeline -->
+    <section class="section timeline" id="timeline">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Timeline</span>
+                <h2 class="section-title">Project Timeline</h2>
+            </div>
+            <div class="timeline-content reveal">
+                <div class="timeline-month">
+                    <h3>Month 1: Foundation</h3>
+                    <p>Week 1-2: Project setup, Django configuration</p>
+                    <p>Week 3-4: GitHub OAuth, basic authentication</p>
+                </div>
+                <div class="timeline-month">
+                    <h3>Month 2: Core Features</h3>
+                    <p>Week 1-2: ZIP upload deployment</p>
+                    <p>Week 3-4: Static file serving, basic logs</p>
+                </div>
+                <div class="timeline-month">
+                    <h3>Month 3: Advanced Features</h3>
+                    <p>Week 1-2: GitHub repository deployment</p>
+                    <p>Week 3-4: Buildpacks integration, Docker</p>
+                </div>
+                <div class="timeline-month">
+                    <h3>Month 4: Polish & Testing</h3>
+                    <p>Week 1-2: Bug fixes, optimization</p>
+                    <p>Week 3-4: Testing, documentation</p>
+                </div>
+                <div class="timeline-month">
+                    <h3>Month 5-6: Payment (Future)</h3>
+                    <p>Stripe setup, Subscription management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 23: Conclusion -->
+    <section class="section conclusion" id="conclusion">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Conclusion</span>
+                <h2 class="section-title">Summary</h2>
+            </div>
+            <div class="conclusion-content reveal">
+                <p>EverRun is a powerful website deployment platform that streamlines the deployment process for developers and businesses.</p>
+                <div class="conclusion-points">
+                    <div>✓ Cloud-Based & Containerized</div>
+                    <div>✓ Multi-Framework Support</div>
+                    <div>✓ Developer-Friendly Interface</div>
+                </div>
+                <div class="future-enhancements">
+                    <h3>Future Enhancements:</h3>
+                    <ul>
+                        <li>Payment Gateway - Stripe subscriptions</li>
+                        <li>Custom Domains</li>
+                        <li>CI/CD Integration</li>
+                        <li>AI-Powered Insights</li>
+                        <li>Multi-Cloud Support</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 24: Bibliography -->
+    <section class="section bibliography" id="bibliography">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Bibliography</span>
+                <h2 class="section-title">Reference Links</h2>
+            </div>
+            <div class="references-grid reveal">
+                <div class="ref-item"><span>Django:</span> docs.djangoproject.com</div>
+                <div class="ref-item"><span>django-allauth:</span> django-allauth.readthedocs.io</div>
+                <div class="ref-item"><span>Docker:</span> docker.com</div>
+                <div class="ref-item"><span>Buildpacks:</span> buildpacks.io</div>
+                <div class="ref-item"><span>Nixpacks:</span> nixpacks.com</div>
+                <div class="ref-item"><span>GitHub API:</span> docs.github.com</div>
+                <div class="ref-item"><span>Stripe:</span> stripe.com/docs</div>
+                <div class="ref-item"><span>Vercel:</span> vercel.com</div>
+                <div class="ref-item"><span>Netlify:</span> netlify.com</div>
+                <div class="ref-item"><span>Render:</span> render.com</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 25: Thank You -->
+    <section class="section thank-you" id="thankyou">
+        <div class="container">
+            <div class="thankyou-content reveal">
+                <h1>THANK YOU</h1>
+                <h2>EverRun - Website Deployment Platform</h2>
+                <div class="contact-info">
+                    <p>📧 Email: [Your Email]</p>
+                    <p>🐙 GitHub: [Your GitHub]</p>
+                    <p>🌐 Website: [Your Website]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 EverRun. Built with ❤️ for developers.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
