@@ -15,7 +15,7 @@
     --gradient-2: linear-gradient(135deg, #ff0066 0%, #ff6b00 100%);
     --gradient-3: linear-gradient(135deg, #0066ff 0%, #00ff88 100%);
     --gradient-4: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-    --font-pixel: 'Pixelify Sans', sans-serif;
+    --font-pixel: 'Space Grotesk', sans-serif;
     --font-outfit: 'Outfit', sans-serif;
     --font-space: 'Space Grotesk', sans-serif;
 }
@@ -68,7 +68,7 @@ nav {
 }
 
 .logo {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
     font-weight: 800;
     background: var(--gradient-1);
@@ -101,7 +101,7 @@ nav {
 }
 
 .title-slide h1 {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(4rem, 12vw, 10rem);
     font-weight: 800;
     background: var(--gradient-1);
@@ -111,7 +111,7 @@ nav {
 }
 
 .title-slide h2 {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 400;
     color: rgba(255,255,255,0.7);
@@ -119,7 +119,7 @@ nav {
 }
 
 .hero-subtitle {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.2rem;
     color: var(--primary);
     opacity: 0;
@@ -188,11 +188,11 @@ nav {
 
 /* Headings - Pixelify Sans */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .section-title {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
 }
@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .obj-num {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 3rem;
     font-weight: 800;
     color: rgba(255,255,255,0.05);
@@ -1058,7 +1058,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thankyou-content h1 {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(4rem, 10vw, 8rem);
     font-weight: 800;
     background: var(--gradient-1);
